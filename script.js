@@ -77,7 +77,7 @@ const items = [
   // Текст, если ничего не найдено
   const nothingFound = document.querySelector("#nothing-found");
   function prepareShopItem(shopItem) {
-    // Деструктурируем свойства объекта
+   
     const { title, description, tags, img, price, rating } = shopItem;
    
     const item = itemTemplate.content.cloneNode(true);
@@ -87,7 +87,7 @@ const items = [
     item.querySelector("img").src = img;
     item.querySelector(".price").textContent = `${price}P`;
   
-    // Находим контейнер для рейтинга
+   га
     const ratingContainer = item.querySelector(".rating");
     // Рисуем нужное количество звездочек
     for (let i = 0; i < rating; i++) {
