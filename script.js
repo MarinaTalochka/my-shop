@@ -70,7 +70,7 @@ const items = [
   
   let currentState = [...items];
   
-  // Переменная с контейнером для товаров
+ 
   const itemsContainer = document.querySelector("#shop-items");
   // Шаблон для товара
   const itemTemplate = document.querySelector("#item-template");
