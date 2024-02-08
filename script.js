@@ -70,11 +70,11 @@ const items = [
   
   let currentState = [...items];
   
-  // Переменная с контейнером для товаров
+ 
   const itemsContainer = document.querySelector("#shop-items");
   // Шаблон для товара
   const itemTemplate = document.querySelector("#item-template");
-  // Текст, если ничего не найдено
+ 
   const nothingFound = document.querySelector("#nothing-found");
   function prepareShopItem(shopItem) {
     // Деструктурируем свойства объекта
