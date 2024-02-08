@@ -144,11 +144,10 @@ const items = [
     return 0;
   }
   
-  // Вызываем функцию для отрисовки в самом начале
-  // И тут же сортируем по алфавиту
+  
   renderItems(currentState.sort((a, b) => sortByAlphabet(a, b)));
   
-  // Функция для создания верстки конкретного товара
+ 
   
   const sortControl = document.querySelector('#sort');
   sortControl.addEventListener('change', (event) => {
