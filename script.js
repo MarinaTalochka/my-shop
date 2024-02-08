@@ -77,7 +77,7 @@ const items = [
   // Текст, если ничего не найдено
   const nothingFound = document.querySelector("#nothing-found");
   function prepareShopItem(shopItem) {
-    // Деструктурируем свойства объекта
+   
     const { title, description, tags, img, price, rating } = shopItem;
     // Берем за основу шаблон товара
     const item = itemTemplate.content.cloneNode(true);
