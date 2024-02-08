@@ -123,7 +123,7 @@ const items = [
      
       itemsContainer.append(prepareShopItem(item));
     });
-    // Если массив товаров пустой, отображаем текст, что ничего не нашлось
+    
     if (!arr.length) {
       nothingFound.textContent = "Ничего не найдено";
     }
@@ -131,12 +131,11 @@ const items = [
   
  
   function sortByAlphabet(a, b) {
-    // Смотрим на свойство title
-    // Если title первого товара алфавитно больше второго...
+   
     if (a.title > b.title) {
       return 1;
     }
-    // Если title второго товара больше
+  
     if (a.title < b.title) {
       return -1;
     }
