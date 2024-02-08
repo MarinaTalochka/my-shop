@@ -74,12 +74,12 @@ const items = [
   const itemsContainer = document.querySelector("#shop-items");
 
   const itemTemplate = document.querySelector("#item-template");
-  // Текст, если ничего не найдено
+  
   const nothingFound = document.querySelector("#nothing-found");
   function prepareShopItem(shopItem) {
    
     const { title, description, tags, img, price, rating } = shopItem;
-    // Берем за основу шаблон товара
+    
     const item = itemTemplate.content.cloneNode(true);
     // Наполняем его информацией из объекта
     item.querySelector("h1").textContent = title;
