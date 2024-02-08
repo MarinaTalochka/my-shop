@@ -81,7 +81,7 @@ const items = [
     const { title, description, tags, img, price, rating } = shopItem;
     // Берем за основу шаблон товара
     const item = itemTemplate.content.cloneNode(true);
-    // Наполняем его информацией из объекта
+   
     item.querySelector("h1").textContent = title;
     item.querySelector("p").textContent = description;
     item.querySelector("img").src = img;
