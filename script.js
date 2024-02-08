@@ -108,21 +108,19 @@ const items = [
       tagsHolder.append(element);
     });
   
-    // Возвращаем HTML-элемент
+  
     return item;
   }
   
-  // Функция для отрисовки
-  // В качестве параметра — товары, которые нужно отрисовать
+ 
   function renderItems(arr) {
-    // Сбрасываем текст "Ничего не найдено" после предыдущего поиска
+  
     nothingFound.textContent = "";
-    // И чистим контейнер с товарами на случай, если там что-то было
+   
     itemsContainer.innerHTML = "";
-    // Отрисовываем товары из переданного параметра arr
+   
     arr.forEach((item) => {
-      // Вызываем prepareShopItem для каждого товара
-      // И подставляем результат в верстку
+     
       itemsContainer.append(prepareShopItem(item));
     });
     // Если массив товаров пустой, отображаем текст, что ничего не нашлось
