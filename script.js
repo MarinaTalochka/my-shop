@@ -138,7 +138,7 @@ const items = [
     if (a.title < b.title) {
       return -1;
     }
-    // Если они равны
+    
     return 0;
   }
   
